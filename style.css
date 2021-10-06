@@ -1,0 +1,125 @@
+/* captcha skrij značko in zmanjšaj tekst*/
+.grecaptcha-badge{
+	display: none!important;
+}
+.captchaforma
+{
+	color: #BEBEBE;
+	font-size: 12px;
+}
+/* Košarica izdelkov pod iskalnikom*/
+.woocommerce-cart .wishlist-cart-wrapper.clearfix, .woocommerce-checkout .wishlist-cart-wrapper.clearfix{
+	display: none;
+}
+.wishlist-cart-wrapper.clearfix .estore-cart-views, .wishlist-cart-wrapper.clearfix .widget.woocommerce.widget_shopping_cart h2{
+	text-align: center;
+	padding-left: 5%;
+}
+.wishlist-cart-wrapper.clearfix .widget.woocommerce.widget_shopping_cart h2{
+	font-family: Lora;
+}
+.widget.woocommerce.widget_shopping_cart{
+	padding: 15px;
+	background: #FFF;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+.widget.woocommerce.widget_shopping_cart .woocommerce-mini-cart.cart_list.product_list_widget {
+	padding-top: 10px;
+}
+.widget.woocommerce.widget_shopping_cart .woocommerce-mini-cart.cart_list.product_list_widget a, .estore-cart-views i, .estore-cart-views span{
+	color: #00afeb;
+}
+.widget.woocommerce.widget_shopping_cart img{
+	margin-top: 5px;
+}
+.cart-wrapper:hover .widget.woocommerce.widget_shopping_cart{
+	display: inline;
+	visibility: visible;
+	z-index: 9999!important;
+	opacity: 1;
+}
+/* konec košarice*/
+.scp-search__input::placeholder{
+	color: #FFFFFF!important;
+}
+/* URNIK menu */
+.sidebar-header-left{
+	font-weight: bold;
+	color: #000000;
+	font-size: 1.2em;
+}
+.sidebar-header-left .textwidget{
+	font-size: 0.7em!important;
+}
+/* default je z-index: 9999, ki gre čez lightbox izdelkov*/
+.navbarprimary.navbar{
+	z-index: 5!important;
+}
+/* skrij ime datoteke na slikah produkta*/
+.pswp__caption{
+	display: none;
+}
+/* gumb za piškotke */
+.buttonCookie{
+	background: #00afeb!important;
+}
+.buttonCookie:hover{
+	background: #026687!important;
+}
+/* druga slika v footer */
+.alignnone.wp-image-118.size-medium.img-fluid, .alignnone.wp-image-118.size-medium{
+	padding: 6px 0;
+	background: #FFFFFF;
+}
+/* woocommerce cena izdelka */
+.di-page-contents .price{
+	font-weight: bold!important;
+	font-size: 1em!important;
+	color: black!important;
+}
+/* woocommerce zavihki*/
+.tabs.wc-tabs{
+	background: #00afeb!important;
+}
+.tabs.wc-tabs a{
+	color: white!important;
+}
+.tabs.wc-tabs .active a{
+	color: #00afeb!important;
+}
+/* Woocommerce zaključek nakupa*/
+#billing_country_field{
+	display: none!important;
+}
+/* Woocommerce naslov kategorij*/
+.woocommerce-loop-category__title{
+	text-align: center;
+}
+/* slogan strani */
+a.custom-logo-link:after{
+	content: "edina železnina, ki jo potrebujete...";
+	color: #000000;
+	display: block;
+}
+.headermain{
+	padding-top: 10px!important;
+	padding-bottom: 10px!important;
+}
+/* mobilni CSS */
+@media only screen and (max-width: 768px) {
+  a.custom-logo-link:after{
+		padding-bottom: 25px;
+	}
+	.wishlist-cart-wrapper.clearfix .estore-cart-views{
+	padding-left: 20%;
+}
+	.wishlist-cart-wrapper.clearfix .widget.woocommerce.widget_shopping_cart h2{
+		margin-left: -10%;
+	}
+	.wishlist-cart-wrapper.clearfix .woocommerce-mini-cart__buttons.buttons{
+		text-align: center;
+	}
+}
